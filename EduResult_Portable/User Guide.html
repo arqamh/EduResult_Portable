@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Arqam Hameed">
+<title>EduResult Portable – User Guide</title>
+<style>
+  :root { --ink:#14213d; --muted:#5b6475; --brand:#1d4f91; --soft:#eef4fc; --line:#dfe4ec; --warn:#fff6e0; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 16px/1.6 system-ui, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: #f6f7f9; }
+  main { max-width: 860px; margin: 0 auto; padding: 32px 20px 60px; background: #fff; min-height: 100vh; }
+  h1 { font-size: 2rem; margin: 0 0 4px; color: var(--brand); }
+  h2 { font-size: 1.35rem; margin: 36px 0 10px; padding-top: 12px; border-top: 2px solid var(--line); color: var(--brand); }
+  h3 { font-size: 1.05rem; margin: 22px 0 6px; }
+  p, li { max-width: 72ch; }
+  .lead { color: var(--muted); font-size: 1.05rem; }
+  .box { background: var(--soft); border-radius: 10px; padding: 12px 16px; margin: 14px 0; }
+  .warn { background: var(--warn); }
+  nav ol { columns: 2; padding-left: 20px; }
+  nav a { color: var(--brand); }
+  table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 15px; }
+  th, td { border: 1px solid var(--line); padding: 7px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--soft); }
+  kbd, .ui { font-weight: 700; }
+  .folder { font-family: Consolas, ui-monospace, monospace; background: #f3f4f6; border-radius: 8px; padding: 12px 16px; white-space: pre; overflow-x: auto; font-size: 14px; }
+  footer { margin-top: 48px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  @media (max-width: 600px) { nav ol { columns: 1; } main { padding: 20px 16px 40px; } }
+  @media print { body { background: #fff; } main { padding: 0; } h2 { break-after: avoid; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>EduResult Portable</h1>
+  <p class="lead">G.C.E. O/L and A/L examination result analysis for your school. This guide explains everything you need, step by step.</p>
+
+  <nav aria-label="Contents">
+    <ol>
+      <li><a href="#start">Starting EduResult</a></li>
+      <li><a href="#first">The first time: create the administrator</a></li>
+      <li><a href="#signin">Signing in and out</a></li>
+      <li><a href="#school">School details and report header</a></li>
+      <li><a href="#import">Importing a results file</a></li>
+      <li><a href="#explore">Dashboard, subjects and candidates</a></li>
+      <li><a href="#reports">Printing reports and Excel downloads</a></li>
+      <li><a href="#save">Saving and opening projects</a></li>
+      <li><a href="#users">Users and passwords</a></li>
+      <li><a href="#rules">Rules and settings</a></li>
+      <li><a href="#numbers">What the numbers mean</a></li>
+      <li><a href="#help">Problems and answers</a></li>
+      <li><a href="#support">Suggestions and support</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="start">1. Starting EduResult</h2>
+  <p>EduResult works inside <b>Google Chrome</b> or <b>Microsoft Edge</b>. You do not need the internet, and nothing needs to be installed.</p>
+  <ol>
+    <li>Copy the <b>EduResult_Portable</b> folder to the computer, for example to the Desktop or a USB drive. If you received a ZIP file, right-click it, choose <b>Extract All…</b>, then click <b>Extract</b>.</li>
+    <li>Open the folder and double-click <b>index.html</b>. If it opens in another program, right-click it, choose <b>Open with</b>, then choose <b>Google Chrome</b> or <b>Microsoft Edge</b>.</li>
+  </ol>
+  <p>The folder contains:</p>
+  <div class="folder">EduResult_Portable
+├── index.html          ← double-click to start
+├── User Guide.html     ← this guide
+├── School              ← your school details, logo, header picture and user accounts
+├── Projects            ← your saved projects
+├── Templates           ← empty Excel templates for entering results
+└── Sample Data         ← made-up example files to practise with</div>
+
+  <h2 id="first">2. The first time: create the administrator</h2>
+  <ol>
+    <li>Enter your <b>full name</b>, choose a <b>username</b> and a <b>password</b> of at least 8 characters, then click <span class="ui">Create administrator</span>.</li>
+    <li>EduResult shows a <b>recovery key</b>, a code like <i>ABCD-EFGH-…</i>. Write it down or click <span class="ui">Print recovery key</span>, and keep it somewhere safe, away from the computer.</li>
+    <li>Tick <b>I have written down or printed the recovery key</b> and click <span class="ui">Save accounts and continue</span>.</li>
+    <li>Your browser asks you to choose a folder. Choose the <b>EduResult_Portable</b> folder (the one that contains index.html) and click <span class="ui">Select Folder</span>. If the browser asks for permission to save changes, click <span class="ui">Allow</span> or <span class="ui">Save changes</span>.</li>
+  </ol>
+  <div class="box warn"><b>Why the recovery key matters:</b> saved projects are locked with your accounts. If every administrator forgets their password, the recovery key is the only way to open them again.</div>
+
+  <h2 id="signin">3. Signing in and out</h2>
+  <ul>
+    <li>Each time you open EduResult, sign in with your username and password.</li>
+    <li>Click <span class="ui">Log out</span> (top right) when you finish, especially on a shared computer.</li>
+    <li>If nobody uses EduResult for 20 minutes, the screen locks. Enter your password to continue where you were.</li>
+  </ul>
+
+  <h2 id="school">4. School details and report header</h2>
+  <p>Open <span class="ui">Settings &amp; rules</span>. The <b>School details</b> card holds the school name, address, telephone, email, website and the “Prepared by” name for reports.</p>
+  <ul>
+    <li><b>Report header image</b>: upload your school's letterhead or banner (a wide PNG or JPG picture, about 2000 × 300 pixels). Printed reports then start with this picture.</li>
+    <li><b>School logo</b>: a small square picture shown in the menu, and on reports when there is no header image.</li>
+    <li>Address, telephone, email and website are printed on reports <b>only if you fill them in</b>.</li>
+    <li>Click <span class="ui">Save as school defaults</span> (administrators only). The details are kept in the <b>School</b> folder and filled in automatically every time you start.</li>
+  </ul>
+  <p>The details are stored in <b>School › school-config.js</b>. You can also open that file with Notepad and change the text between the quotes.</p>
+
+  <h2 id="import">5. Importing a results file</h2>
+  <ol>
+    <li>Choose <b>O/L</b> or <b>A/L</b> at the top of the menu, then click <span class="ui">Import results</span>.</li>
+    <li>Enter the <b>examination year</b>. Then drag the Excel file onto the box, or click the box to choose it.</li>
+    <li>EduResult recognises the file type by itself, even if the file name ends in “.xls” while the file is really a newer Excel file.</li>
+    <li>Check the <b>column list</b>. Each column has been given a meaning (candidate name, index number, subject result and so on). Change any that are wrong.</li>
+    <li>Click <span class="ui">Validate data</span>. EduResult checks every row and lists any problem with its row number. You can download this list as an Excel file.</li>
+    <li>When there are no errors, click <span class="ui">Import</span>. If some rows have errors, you can fix the file and try again, or choose <b>Import only rows without errors</b>.</li>
+  </ol>
+  <div class="box"><b>Official results sheets:</b> cells such as <i>32TC 3</i> are read as subject code 32, medium T, grade C. The last number is kept exactly as it is in the file. If a sheet has a “Grade Count” column, EduResult checks that it agrees with the grades it read and shows <b>Grade Count verified</b>.</div>
+
+  <h2 id="explore">6. Dashboard, subjects and candidates</h2>
+  <ul>
+    <li><b>Dashboard</b>: summary figures, charts and tables. Use the filters (gender, medium, attempt or stream, class, subject, grade) to look at a group. Every figure on the page follows the filters. Click <span class="ui">Reset filters</span> to see everyone again.</li>
+    <li><b>Subjects</b>: grade counts and pass rates for every subject, and the list of candidates who did not pass a chosen subject.</li>
+    <li><b>Candidates</b>: search by name or index number. Click a candidate to see all their results.</li>
+    <li><b>Year comparison</b>: compare different years. Import each year's results first.</li>
+  </ul>
+
+  <h2 id="reports">7. Printing reports and Excel downloads</h2>
+  <p>Open <span class="ui">Reports</span>. Each report has two buttons:</p>
+  <ul>
+    <li><span class="ui">Print / PDF</span> opens the print window. Choose a printer, or choose <b>Save as PDF</b> to make a PDF file.</li>
+    <li><span class="ui">Excel</span> downloads the same figures as an Excel workbook.</li>
+  </ul>
+  <p>Reports use the results and filters you are currently looking at. They show your header image (or logo and school name), any contact details you filled in, the date, page numbers and an explanation of how each percentage is calculated. For an individual student report, first choose the student on the <b>Candidates</b> page.</p>
+
+  <h2 id="save">8. Saving and opening projects</h2>
+  <p>A <b>project</b> is everything you have imported, plus your settings. Click <span class="ui">Save project</span> (top right) to keep it.</p>
+  <ul>
+    <li>Projects are saved in the <b>Projects</b> folder with a name that tells you what is inside, for example:<br><i>KL Naleem Hajiar Ladies College - OL 2025 &amp; AL 2024-2025 - 2026-10-11.eduresult.json</i></li>
+    <li>Saving the same project again on the same day updates the same file.</li>
+    <li>To open a project, go to <span class="ui">Project &amp; data</span>. The <b>Saved projects</b> list shows the school, the results inside and when it was saved. Click <span class="ui">Open</span>.</li>
+    <li>Saved projects are <b>locked (encrypted)</b>. They can only be opened in this EduResult folder by someone who can sign in.</li>
+    <li>“Unsaved changes” at the top means something has not been saved yet.</li>
+  </ul>
+  <div class="box"><b>Backups:</b> copy the whole <b>EduResult_Portable</b> folder to a USB drive or another computer from time to time. Always keep the <b>School</b> and <b>Projects</b> folders together: the projects can only be opened with the accounts in the School folder.</div>
+
+  <h2 id="users">9. Users and passwords</h2>
+  <table>
+    <tr><th>Role</th><th>Can do</th></tr>
+    <tr><td>Administrator</td><td>Everything, including adding and removing users, resetting passwords and saving the school defaults.</td></tr>
+    <tr><td>Staff</td><td>Import results, view the analysis, print reports, and save and open projects. Can change their own password.</td></tr>
+  </table>
+  <ul>
+    <li>Open <span class="ui">Users &amp; password</span> to change your own password.</li>
+    <li>Administrators add users there (full name, username, role and a starting password) and can reset anyone's password.</li>
+    <li><b>Forgot your password?</b> Ask an administrator to reset it. If no administrator can sign in, click <b>Forgot password? Use the recovery key</b> on the sign-in screen.</li>
+  </ul>
+
+  <h2 id="rules">10. Rules and settings</h2>
+  <ul>
+    <li><b>Pass and credit grades</b>: by default, A, B, C and S are passes, and A, B and C are credit passes.</li>
+    <li><b>O/L qualification rule</b> and <b>A/L eligibility rule</b>: EduResult comes with an <i>example</i> rule marked “not verified”. Enter the rule from the official circular, write where it comes from, and tick “I have verified this rule”. Reports say whether the rule was verified.</li>
+    <li><b>Special statuses</b>: symbols such as “+” that appear instead of a grade. They are never counted as a failure. Give them a description from your official documents.</li>
+    <li><b>Subject names</b>: give each subject code its proper name, for example for “1st Subject Group · 61”.</li>
+  </ul>
+
+  <h2 id="numbers">11. What the numbers mean</h2>
+  <table>
+    <tr><th>Term</th><th>Meaning</th></tr>
+    <tr><td>Sat a subject</td><td>The candidate has a grade (A, B, C, S or W for O/L; A, B, C, S or F for A/L) for that subject.</td></tr>
+    <tr><td>Subject pass rate</td><td>Candidates who passed the subject, out of those who sat it.</td></tr>
+    <tr><td>Result pass rate</td><td>All passing grades, out of all grades given.</td></tr>
+    <tr><td>All-A</td><td>Every grade is A, with at least the full number of subjects.</td></tr>
+    <tr><td>Special status (e.g. “+”)</td><td>Not a grade. Shown separately and not counted in any percentage.</td></tr>
+    <tr><td>Blank cell</td><td>No entry for that subject. It is not counted as absent or failed.</td></tr>
+    <tr><td>Z-Score, district and island rank</td><td>Shown only when they are in the imported file. EduResult never calculates them.</td></tr>
+  </table>
+
+  <h2 id="help">12. Problems and answers</h2>
+  <h3>The page looks plain or broken, or says it “could not load its files”</h3>
+  <p>The folder was not extracted from the ZIP. Close the page, extract the ZIP (right-click, <b>Extract All…</b>) and open <b>index.html</b> from the extracted folder.</p>
+  <h3>The browser asks me to choose a folder</h3>
+  <p>Choose the <b>EduResult_Portable</b> folder, the one that contains index.html, not the Projects or School folder inside it. You only need to do this once per computer. The browser may sometimes ask you to allow access again; click <b>Allow</b>.</p>
+  <h3>“This project was saved with different EduResult user accounts”</h3>
+  <p>The project was saved in a different EduResult folder that has its own accounts. Open it in the folder where it was created, or copy that folder's <b>School</b> folder along with it.</p>
+  <h3>Is my students' information safe?</h3>
+  <p>EduResult never sends anything over the internet. Saved projects are encrypted. The Excel files you import and the reports you print or download are ordinary files, so store them carefully and delete copies you no longer need.</p>
+
+  <h2 id="support">13. Suggestions and support</h2>
+  <p>For suggestions, questions or to report a problem, please email the developer at <a href="mailto:arqamhameed@gmail.com?subject=EduResult%20Portable%20%E2%80%93%20School%20name%20%E2%80%93%20Suggestion%20%2F%20Query"><b>arqamhameed@gmail.com</b></a>.</p>
+  <p>So your message can be identified quickly, please put the <b>app name</b> and <b>your school</b> in the subject line, for example: <i>EduResult Portable – KL/ Naleem Hajiar Ladies College – Query</i>. The <b>Email the developer</b> button on the Home page fills this in for you.</p>
+  <p>Please describe what you were doing and what happened. Do <b>not</b> attach student results, saved project files or the recovery key.</p>
+
+  <footer>EduResult Portable · Developed by <b>Arqam Hameed</b> · <a href="mailto:arqamhameed@gmail.com">arqamhameed@gmail.com</a></footer>
+</main>
+</body>
+</html>
