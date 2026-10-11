@@ -1,7 +1,0 @@
-Saved EduResult projects are kept in this folder.
-
-Each file is named after the school, the examinations it contains and the date it was saved,
-for example: "School name - OL 2025 & AL 2024-2025 - 2026-10-11.eduresult.json".
-
-The files are encrypted. They can only be opened in EduResult by someone who can sign in.
-To make a backup, copy the whole EduResult_Portable folder (including School and Projects).

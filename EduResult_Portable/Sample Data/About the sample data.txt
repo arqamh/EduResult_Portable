@@ -1,2 +1,0 @@
-These files contain MADE-UP example results so you can try EduResult safely.
-None of the names, index numbers, Z-Scores or ranks belong to real students.
